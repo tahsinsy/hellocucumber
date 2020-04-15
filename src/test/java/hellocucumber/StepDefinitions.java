@@ -63,8 +63,8 @@ public class StepDefinitions {
 
 	@And("^go to page (.+)$")
 	public void go_to_page(String nameUrl) throws Exception {
-	//	WebDriver driver = new RemoteWebDriver(new URL(URL), caps);
-	//	driver.get(nameUrl);
+		WebDriver driver = new RemoteWebDriver(new URL(URL), caps);
+		driver.get(nameUrl);
 
 	}
 
